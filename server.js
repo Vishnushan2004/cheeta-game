@@ -1,3 +1,9 @@
+require('dotenv').config(); // Reads from .env
+
+const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
+const mongoURI = process.env.MONGO_URI;
+
+
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
