@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.cheeta-img {
+  width: 200px;
+  height: auto;
+  margin: 20px;
+  filter: drop-shadow(0 0 20px #f39c12);
+  transition: transform 0.2s;
+}
+
+.cheeta-img:active {
+  transform: scale(1.05);
+}
+
+button, .btn {
+  background: linear-gradient(to right, #f39c12, #e67e22);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #f39c12;
+}
+
+.card {
+  background: #1c1c1c;
+  border: 2px solid #f39c12;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 300px;
+  box-shadow: 0 0 15px #f39c12;
+}

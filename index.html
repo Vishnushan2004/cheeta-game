@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cheeta Game</title>
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <header>
+    <div class="avatar"></div>
+    <div class="coins">💰 Coins: <span id="coinCount">0</span></div>
+  </header>
+
+  <main>
+    <div class="cheeta-container">
+      <img src="assets/cheeta.png" alt="Cheeta" id="cheeta" draggable="false" />
+    </div>
+
+    <button id="dailyBtn">🎁 Claim Daily Coins</button>
+
+    <section class="upgrades">
+      <div class="card" data-cost="100" data-boost="1">
+        <div class="card-icon">⚡</div>
+        <div class="card-title">Boost Speed</div>
+        <div class="card-cost">Cost: 100 coins</div>
+      </div>
+      <div class="card" data-cost="500" data-boost="5">
+        <div class="card-icon">🏆</div>
+        <div class="card-title">Golden Track</div>
+        <div class="card-cost">Cost: 500 coins</div>
+      </div>
+      <div class="card" data-cost="1000" data-boost="10">
+        <div class="card-icon">🐾</div>
+        <div class="card-title">Cheeta Squad</div>
+        <div class="card-cost">Cost: 1000 coins</div>
+      </div>
+    </section>
+
+    <section class="refer-section">
+      <h3>🎁 Invite Friends & Earn!</h3>
+      <p>Share this link and get 200 coins per referral:</p>
+      <input type="text" id="refLink" readonly />
+    </section>
+  </main>
+
+  <footer>Made with ❤️ for Telegram WebApp – Cheeta Game</footer>
+  <script src="script.js"></script>
+</body>
+</html>
